@@ -1,0 +1,158 @@
+@import '../../index.scss';
+
+.header {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+
+  h1 {
+    font-family: $font-family;
+    font-family: 800;
+    font-size: 62px;
+    line-height: 75px;
+    /* or 121% */
+    letter-spacing: -0.04em;
+  }
+
+  p {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: $color-text;
+    margin-top: 1.5rem;
+  }
+}
+
+.input {
+  width: 100%;
+  margin: 2rem 0 1rem;
+  display: flex;
+
+  input {
+    flex: 2;
+    width: 100%;
+    min-height: 50px;
+    background: #052d56;
+    border-radius: 5px 0px 0px 5px;
+    padding: 1.5rem 2rem;
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    border: none;
+  }
+
+  button {
+    background: #ff4820;
+    flex: 0.6;
+    border-radius: 0 5px 5px 0;
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+.people {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 2rem;
+
+  img {
+    width: 181.79px;
+    height: 38px;
+  }
+
+  span {
+    margin-left: 1rem;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+.heroImage {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .content {
+    margin: 0 0 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .people {
+    flex-direction: column;
+  }
+
+  .input {
+    input,
+    button {
+      font-size: 1rem;
+      line-height: 1;
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .header {
+    h1 {
+      font-size: 2.2rem;
+      line-height: 1.2;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .input {
+    input,
+    button {
+      font-size: 0.8rem;
+      line-height: 1;
+    }
+  }
+}
