@@ -1,6 +1,25 @@
 import React from 'react';
-import './brand.module.scss';
+import styles from './brand.module.scss';
+import { google, slack, atlassian, dropbox, shopify } from './imports';
 
 export const Brand = () => {
-  return <div>Brand</div>;
+  return (
+    <div className={`${styles.brand} section__padding`}>
+      <div>
+        <img src={google} alt='google' />
+      </div>
+      <div>
+        <img src={slack} alt='slack' />
+      </div>
+      <div>
+        <img src={atlassian} alt='atlassian' />
+      </div>
+      <div>
+        <img src={dropbox} alt='dropbox' />
+      </div>
+      <div>
+        <img src={shopify} alt='shopify' />
+      </div>
+    </div>
+  );
 };

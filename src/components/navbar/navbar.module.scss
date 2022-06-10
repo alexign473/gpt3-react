@@ -1,5 +1,6 @@
-@import '../../index.scss';
+@import '../../variables.scss';
 
+/* links styles */
 @mixin nav-link {
   color: #fff;
   font-family: $font-family;
@@ -22,7 +23,7 @@
 
   img {
     width: 62px;
-    height: 16px;
+    height: auto;
   }
 }
 

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-@import './index.scss';
+@import './variables.scss';
 
 * {
   box-sizing: border-box;
@@ -34,7 +34,7 @@ a {
 }
 
 .section__margin {
-  padding: 4rem 6rem;
+  margin: 4rem 6rem;
 }
 
 .scale-up-center {
@@ -69,7 +69,7 @@ a {
   }
 
   .section__margin {
-    padding: 4rem;
+    margin: 4rem;
   }
 }
 
@@ -79,6 +79,6 @@ a {
   }
 
   .section__margin {
-    padding: 4rem 2rem;
+    margin: 4rem 2rem;
   }
 }

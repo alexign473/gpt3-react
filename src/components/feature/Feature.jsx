@@ -1,6 +1,22 @@
 import React from 'react';
-import './feature.modules.scss';
+import classNames from 'classnames';
+import styles from './feature.module.scss';
 
-export const Feature = () => {
-  return <div>Feature</div>;
+export const Feature = ({ title, text, variant }) => {
+  const featureClass = classNames(styles.feature, {
+    [styles.featureTop]: variant === 'top-feature',
+    [styles.featureCol]: variant === 'col',
+  });
+
+  return (
+    <div className={featureClass}>
+      <div className={styles.featureTitle}>
+        <div />
+        <h1>{title}</h1>
+      </div>
+      <div className={styles.featureText}>
+        <p>{text}</p>
+      </div>
+    </div>
+  );
 };

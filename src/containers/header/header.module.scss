@@ -1,4 +1,4 @@
-@import '../../index.scss';
+@import '../../variables.scss';
 
 .header {
   display: flex;
@@ -14,8 +14,8 @@
 
   h1 {
     font-family: $font-family;
-    font-family: 800;
-    font-size: 62px;
+    font-weight: 800;
+    font-size: 3.875rem;
     line-height: 75px;
     /* or 121% */
     letter-spacing: -0.04em;
@@ -24,7 +24,7 @@
   p {
     font-family: $font-family;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 27px;
     color: $color-text;
     margin-top: 1.5rem;
@@ -45,7 +45,7 @@
     padding: 1.5rem 2rem;
     font-family: $font-family;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 27px;
     color: #fff;
     border: none;
@@ -57,7 +57,7 @@
     border-radius: 0 5px 5px 0;
     font-family: $font-family;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 27px;
     color: #ffffff;
     cursor: pointer;
@@ -83,7 +83,7 @@
     margin-left: 1rem;
     font-family: $font-family;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 38px;
     color: #ffffff;
     text-align: center;
