@@ -6,6 +6,7 @@ export const Feature = ({ title, text, variant }) => {
   const featureClass = classNames(styles.feature, {
     [styles.featureTop]: variant === 'top-feature',
     [styles.featureCol]: variant === 'col',
+    [styles.featureSmall]: variant === 'small',
   });
 
   return (

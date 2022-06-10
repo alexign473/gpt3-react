@@ -68,7 +68,17 @@
     margin-top: 0.5rem;
   }
 }
+
+.featureSmall {
+  margin: 1rem;
+}
 /* end */
+
+// @media screen and (max-width: 990px) {
+//   .featureSmall {
+//     flex-direction: column;
+//   }
+// }
 
 @media screen and (max-width: 550px) {
   .featureTitle {
