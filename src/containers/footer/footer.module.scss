@@ -1,0 +1,151 @@
+@import '../../variables';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $color-footer;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-family: $font-family;
+    font-weight: 800;
+    font-size: 3.9rem;
+    line-height: 4.7rem;
+    text-align: center;
+    letter-spacing: -0.04em;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-bottom: 10rem;
+  cursor: pointer;
+
+  p {
+    font-family: $font-family;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    color: #ffffff;
+    word-spacing: 2px;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  text-align: left;
+
+  div {
+    width: 250px;
+    margin: 1rem;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 118px;
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-family: $font-family;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    color: #ffffff;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  h4 {
+    font-family: $font-family;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-family: $font-family;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    color: #ffffff;
+    margin: 1rem 0;
+  }
+}
+
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+
+  p {
+    font-family: $font-family;
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .heading {
+    h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .heading {
+    h1 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .links {
+    div {
+      margin: 1rem 0;
+    }
+  }
+
+  .btn {
+    p {
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .heading {
+    h1 {
+      font-size: 1.7rem;
+      line-height: 2.3rem;
+    }
+  }
+}
