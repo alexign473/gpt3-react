@@ -1,3 +1,7 @@
+# Responsive gpt3 React Layout
+template:  
+https://www.figma.com/file/1dEHMmcQYoheBBoV0UIf0O/Gpt3-figma-langding-page?node-id=0%3A1
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
